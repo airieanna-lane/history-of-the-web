@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 576 216" style="enable-background:new 0 0 576 216;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#DCECC8;}
+	.st1{fill:#0BBCD4;stroke:#5E6BB2;stroke-miterlimit:10;}
+	.st2{fill:#5E6BB2;stroke:#78909C;stroke-width:4;stroke-miterlimit:10;}
+	.st3{fill:#0BBCD4;stroke:#78909C;stroke-width:5;stroke-miterlimit:10;}
+	.st4{fill:#5E6BB2;stroke:#C6E1A7;stroke-width:4;stroke-miterlimit:10;}
+	.st5{font-family:'Helvetica-Oblique';}
+	.st6{font-size:12px;}
+	.st7{font-size:11.192px;}
+	.st8{font-size:10.7926px;}
+</style>
+<rect class="st0" width="576" height="216"/>
+<rect x="16.8" y="23.9" class="st1" width="529.6" height="18.5"/>
+<rect x="13.6" y="17.2" class="st2" width="274.4" height="43.7"/>
+<rect x="16.8" y="102.6" class="st3" width="529.6" height="85.3"/>
+<rect x="18.7" y="106.3" class="st4" width="271.2" height="77.8"/>
+<text transform="matrix(1 0 0 1 56.433 35.2267)"><tspan x="0" y="0" class="st0 st5 st6">This float is not enclosed by the </tspan><tspan x="0" y="14.4" class="st0 st5 st6">surrounding div container. </tspan></text>
+<text transform="matrix(1 0 0 1 297.0458 36.8685)" class="st0 st5 st6">This container lacks the fix.</text>
+<text transform="matrix(1 0 0 1 61.8282 122.8597)"><tspan x="0" y="0" class="st0 st5 st7">See how this float no longer </tspan><tspan x="0" y="13.4" class="st0 st5 st7">protrudes out of the </tspan><tspan x="0" y="26.9" class="st0 st5 st7">containing box, with no extra</tspan><tspan x="0" y="40.3" class="st0 st5 st7">clearing element used in the </tspan><tspan x="0" y="53.7" class="st0 st5 st7">container!</tspan></text>
+<text transform="matrix(1 0 0 1 293.2178 135.3857)"><tspan x="0" y="0" class="st0 st5 st8">This float container has a class attribute of “clearfix”,</tspan><tspan x="0" y="13" class="st0 st5 st8">which applies the :after fix, or the Holly hack,</tspan><tspan x="0" y="25.9" class="st0 st5 st8">depending on the browser.</tspan></text>
+</svg>

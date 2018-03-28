@@ -1,0 +1,19 @@
+body{
+  background-color: #f2f3f4;
+}
+
+.horizontal-rule {
+  padding-top: .125em;
+  border-bottom: .05em solid #ff9999;
+  margin-top: 5%;
+}
+
+main{
+  width: 90%;
+  max-width: 41em;
+  margin: 5% auto;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 1.5;
+}

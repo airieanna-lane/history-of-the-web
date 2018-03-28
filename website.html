@@ -1,21 +1,138 @@
 <!DOCTYPE html>
-<html lang=”en-us”>
+<html lang="en-us">
 <head>
-  <meta charset=”utf-8”>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/main.css">
-  <!-- mobile friendly meta -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>The (Mostly) Complete History of the Web</title>
   <meta name=”author” content=”Airieanna Lane”>
+  <link rel="canonical"
+  href=https://thehistoryoftheweb.com/mostly-complete-history-layout-web-part-1-liquid-cool/>
 </head>
 <body>
-<h1 align="right">THE HISTORY OF THE WEB</h1>
+
+<header id="banner">
+<h1 class="text-right">The History of the Web</h1>
 
 <nav id="menu">
   <ul>
-    <li><a href="">ABOUT</a></li>
-    <li><a href="">TIMELINE</a></li>
-    <li><a href="">ARCHIVES</a></li>
-    <li><a href="">POSTSCRIPT</a></li>
+    <a href="">About</a>
+    <a href="">Timeline</a>
+    <a href="">Archives</a>
+    <a href="">Postscript</a>
     </ul>
 </nav>
+</header>
+
+<main>
+<nav id="header">
+  <h2>The (Mostly) Complete History of Layout on the Web</h2>
+  <h3>Part 1: Liquid Cool</h3>
+
+</nav>
+
+  <p>The web, as a visual and interactive medium, is still pretty new. Designing for the web has always meant striking a balance between influence from other mediums like print and brand new attitudes. The most revolutionary techniques in web design managed to find that balance, and pushed the web forward in leaps and bounds. Little by little, breakthrough after breakthrough, layout on the web has advanced.
+  </p>
+  <p>
+    Let’s start with <u><em>A Dao of Web Design.</u></em>
+  </p>
+
+  <p>A Dao was written by John Allsopp in the spring of 2000 for A List Apart. Allsopp understood the web as a diverse, malleable and unprecedentedly far-reaching experience. It was accessed by millions of users around the world on any number of devices. Windows or Mac computers, small or large screens, and black and white or color monitors. Yet when he took stock of common techniques, he found that designers often tried to fight against the web, setting font sizes to rigid points so they couldn’t be changed by the user, or creating fixed layouts that only worked on large resolution displays. He saw a community that was still reaching into the same bag of tricks that worked for print design. But flexibility, Allsopp argued, was an instrumental feature of the web.
+  </p>
+  <p>Allsopp made an appeal to his fellow designers. Stop trying to control the web. Cast off the shadow of print design. Instead, let designs flow from the grain of the web. Embrace its flexibility and find ways to hand off control to the user.
+  </p>
+  <p>He followed up his ideological plea with some practical advice. He suggested using relative units like ems for fonts. He asked that designers make accessibility a priority as not everyone experiences the web the same way. And perhaps most saliently, he challenged designers to turn away from the fixed-width tables that were the fashion of the day and use CSS to construct fluid, flexible, percentage-based grid layouts.
+  </p>
+  <p>Even before A Dao of Web Design was published though, there were attempts in the design community to reverse the trend of fixed widths. One of the first was known as liquid layout.
+  </p>
+  <p>As far as I can tell the first liquid layout was used on ProjectCool in 1996. The site itself hosted resources for web designers, and was launched to early Internet celebrity status for its once-daily updated gallery called (rather self-explanatorily) “Cool Site of the Day.” The site was created by Glenn Davis, a co-founder of the Web Standards Project (WaSP), who firmly believed that if your site was broken for even a single user, it wasn’t worth having a website at all.
+  </p>
+  <p>Instead of setting width in pixels, Davis advocated for the use of percentages when constructing table grids. For instance, a sidebar might be 30%, and the main content 70%. By using percentages instead of pixels, the browser was able to decide how wide to make each column, and designs stretched and squeezed based on where it was viewed. It was a forward thinking and resolution independent way of doing things.
+  </p>
+  <figure>
+  <img alt="Website" src="picture1.svg" width="65%">
+  </figure>
+
+  <p class="text-center">The principles of flexible design
+  </p>
+  <p>Liquid layout was a pretty massive hit among standards advocates and Internet pioneers. It was one of the first techniques that really felt of-the-web and shook up the standard way of doing things. In the years that followed, designers put their own spins on liquid layout. Some added a single fixed-width column that anchored the whole design. Others wrapped the whole thing in a larger, pixel-width table to emulate a sort of max-width attribute for the design. And the web kept on tinkering.
+  </p>
+  <p>A few years later, when Allsopp published A Dao of Web Design, he added a single crucial ingredient to the mix: CSS.
+  </p>
+  <p>Like Davis, Allsopp was a member of WaSP. His biggest takeaway from that organization was the importance of separating style from structure. At the time, there were very few ways of doing that. The HTML of a page more or less dictated both a webpages content and presentation, mostly thanks to a lack of alternatives. But CSS offered a way to move the presentation of content out of HTML. So when Allsopp made the case for liquid layout, he was drawing on the impressive efforts of those that came before him, but he was also necessarily making the case for CSS itself. That proved to be a radical move.
+  </p>
+<p>
+  It was also all the motivation a lot of designers needed to start digging into CSS, resulting in a sudden rush of new techniques and clever hacks.
+</p>
+<p>In 2003, the web community was introduced to an interesting trick for flexible images. Several designers noticed that if you set an image to a max-width of 100%, then it would never spill outside of its parent container (even if the width of the image was set in CSS). So that was one headache cured.
+</p>
+
+<p>
+Another was solved not longer after. One of the attributes in CSS is called float, which allows for elements to be “floated” inside of other elements (to the left or right). The cool thing was, when you stacked two floated elements next to each other, you were actually able to construct a pretty basic grid. The problem was, unless everything was perfectly aligned, the layout started to break apart. With a few lines of CSS, this could be solved in what became known as the “clearfix,” an elegantly simple hack that forced floated elements into place. I doubt very much grid-based design on the web would have lasted long without the clearfix.
+</p>
+
+<figure>
+<img alt="Website" src="picture2.svg" width="90%">
+</figure>
+
+<p>
+  In 2004, Cameron Adams proposed another interesting trick that he called resolution dependent layout. Using a bit of Javascript, Adams devised a technique to detect the resolution of the monitor a user was using, and then swap out entire stylesheets based on the result. So a user with a 1280 pixel monitor might get a larger grid and typography, while a 640 pixel monitor might get a tighter grid or one-column layout. The technique was never widely adopted, but it certainly foreshadowed what would ultimately become media queries (more on that in the next part).
+</p>
+
+<p>
+  By that point, there were quite a number of differing, though still complementary, approaches to web design. It was a bit of a struggle for some designers to wrap their head around exactly what to use and when. Zoe Gillenwater, who added a number of techniques to the mix herself, organized these disparate tactics into two groups, liquid and elastic, under the umbrella of flexible design. Liquid layouts, like their earliest predecessors, depended on percentages for grid constructions. Elastic layouts were derived from the more controlled ems units to give a consistent rhythm to pages.
+</p>
+
+<figure>
+<img alt="Website" src="flexible.jpeg" width="75%">
+</figure>
+
+<p>
+Gillenwater eventually compiled her tutorials and code samples in the book Flexible Web Design, which served as a handbook for web developers looking to make the switch to fluid layouts. It represented over a decade of collective knowledge and experimentation, and offered cutting edge best practices for an evolving web.
+</p>
+
+<p>
+But just on the horizon, there loomed a new device. One that fit into the palm of your hand, that would change everything.
+</p>
+
+
+<div class="horizontal-rule" role="presentaion"></div>
+
+
+<h4>Added to the Timeline</h4>
+
+  <p>
+  <b>December 11, 2008 -</b> Flexible Web Design Zoe Gillenwater publishes her book, Flexible Web Design: Creating Liquid and Elastic Layouts with CSS, a compilation of tutorials and techniques for approaching liquid grids and elastic web design. The book becomes a handbook for designers looking to make a switch to more flexible designs.
+  </p>
+  <p>
+  <b>September 21, 2004 - Resolution Dependent Layout</b> Cameron Adams publishes a new technique on his blog which uses Javascript to detect the resolution of a site visitor's monitor, and swap out different stylesheets based on the result. This allows designers to change the layout of their site based on resolution, and foreshadows the techniques of responsive web design.
+</p>
+<p>
+<b>December 1, 1995 - Liquid Layout</b> A new approach to laying out designs on the web, Liquid Layout advocates for the use of percentage width tables over the predominantly fixed-width designs of the '90's. When set in percentages, websites are able to expand or narrow based on the resolution it is being rendered in.
+</p>
+
+<div class="horizontal-rule" role="presentaion"></div>
+
+<h5>Sources</h5>
+ <ul>
+  <li>Jeffrey Zeldman. "A Dao of Responsive Liquid." Zeldman on Web & Interaction Design. November 11, 2017. http://www.zeldman.com/2017/11/19/dao-responsive-liquid/
+  </li>
+  <li>Zoe Gillenwater. "Flexible Web Design: Creating Liquid and Elastic Layouts with CSS." Flexible Web Design. 2008. http://www.flexiblewebbook.com/toc.html
+  </li>
+  <li>Cameron Adams. "The Man in Blue > Resolution dependent layout." The Man in Blue. September 9, 2004. http://www.themaninblue.com/writing/perspective/2004/09/21/
+  </li>
+  <li>Richard Rutter. "Images in liquid columns." Clagnut. December 12, 2003. http://clagnut.com/blog/268/
+  </li>
+  <li>Nick Wilson. "What is Liquid Design?." SitePoint. November 11, 2002. https://www.sitepoint.com/liquid-design/
+  </li>
+  <li>Jeffrey Zeldman. "JZ Presents: The 15 Minutes Project." Zeldman. 1996. http://www.zeldman.com/15/davisf.html
+  </li>
+</ul>
+
+
+<footer><small>The History of the Web is a project by Jay Hoffmann.</small></footer>
+</main>
+
+
+</body>

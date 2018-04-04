@@ -2,6 +2,15 @@ body{
   background-color: #78909c;
 }
 
+#background-color {
+
+  background-color: #fff !important;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
 .horizontal-rule {
   padding-top: .3em;
   border-bottom: 1em solid #dcedc8;
@@ -10,11 +19,17 @@ body{
 a {
   color: #5c6bc0;
 }
+#banner-border {
+  background: #5e6bb2;
+  border: 1em solid #5e6bb2;
+    display: inline-block;
+}
 
 #banner {
   background-color: #dcedc8;
   display: inline-block;
   padding-bottom: 1em;
+  margin-left: -2em;
 }
 
 h1 {
@@ -37,6 +52,7 @@ margin-top: 0%;
 margin-bottom: 0%;
 padding-top: 0em;
 }
+
 
 h2 {
   color: #c5e1a5
@@ -82,8 +98,22 @@ ul {
   color: #ffff;
   margin-top: 0%;
   margin-bottom: 0%;
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
+.help {
+  margin:0em;
+  padding:0em;
+  background-color: red;
+}
+
+#sources {
+
+  margin-top: 0%;
+  margin-bottom: 0%;
+
+}
 #timeline
 {font-size: 14px;
 
